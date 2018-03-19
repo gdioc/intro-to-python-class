@@ -94,12 +94,13 @@
       <section>
         <h3>What is Python used for?</h3>
         <ul class="list--tall copy--small box--small">
-          <li class ="fragment">System Administration (Fabric, Salt, Ansible)</li>
-          <li class ="fragment">3D animation and image editing (Maya, Blender, Gimp)</li>
-          <li class ="fragment">Data Science (pandas, sklearn, nltk, tensorflow)</li>
-          <li class ="fragment">Web development (Django, Flask)</li>
-          <li class ="fragment">Game Development (Civilization 4, EVE Online)</li>
-          <li class ="fragment">Web scraping (selenium, scrapy, beautifulsoup)</li>
+          <li class="fragment">System Administration (Fabric, Salt, Ansible)</li>
+          <li class="fragment">3D animation and image editing (Maya, Blender, Gimp)</li>
+          <li class="fragment">Data Science (pandas, sklearn, nltk, tensorflow)</li>
+          <li class="fragment">Web development (Django, Flask)</li>
+          <li class="fragment">Game Development (Civilization 4, EVE Online)</li>
+          <li class="fragment">Web scraping (selenium, scrapy, beautifulsoup)</li>
+          <li class="fragment">Test Automation (Robot Framework)</li>
         </ul>
       </section>
 
@@ -111,6 +112,7 @@
           <li>Buzzfeed</li>
           <li>Google</li>
           <li>NASA</li>
+          <li>Condé Nast</li>
           <li>(many, many others)</li>
         </ul>
       </section>
@@ -152,8 +154,7 @@
 
         <section>
           <h3>Example: Make a Sandwich</h3>
-          <iframe title="Sandwich video" width="560" height="315" src="https://www.youtube.com/embed/XWe4iohhmIw" frameborder="0" allowfullscreen></iframe>
-          <p class="credit">Source: <a>Harvard Students Making Sandwich: CS 50 Algorithm Intro</a></p>
+          <p>What are the steps to making a sandwhich?</p> 
         </section>
 
         <section>
@@ -186,10 +187,6 @@
                   <td><strong>Text Editor</strong></td>
                   <td style="padding-bottom: 20px;">A <span class="blue">program that opens text files</span> and allows the user to edit and save them. (Different than a word processor).</td>
               </tr>
-              <tr>
-                  <td><strong>Notebook (e.g. Jupyter, Zeppelin)</strong></td>
-                  <td style="padding-bottom: 20px;">A <span class="blue">document containing code and text </span> and allows user to <span class="green">interactively</span> explore the results of code and simultaneously write-up findings in a reproducible workflow. (Different than a word processor).</td>
-              </tr>              
           </table>
       </section>
 
@@ -202,7 +199,7 @@
               </tr>
               <tr>
                   <td><strong>MacOSX</strong></td>
-                  <td style="padding-bottom: 20px;">TextMate, TextWrangler</td>
+                  <td style="padding-bottom: 20px;">Textmate</td>
               </tr>
               <tr>
                   <td><strong>Windows</strong></td>
@@ -210,7 +207,7 @@
               </tr>
               <tr>
                   <td><strong>All</strong></td>
-                  <td style="padding-bottom: 20px;">Sublime Text, Vim, Emacs, PyCharm, PyCharm Edu, Atom</td>
+                  <td style="padding-bottom: 20px;">Vim, Emacs, PyCharm, Atom</td>
               </tr>
           </table>
       </section>
@@ -222,15 +219,14 @@
           <p class="box--small copy--small">Let's setup our computer for Python programming</p>
           <ul class="list--xtall box--small copy--small">
               <li>
-                  <a href="http://www.sublimetext.com/3" target="_blank">Install Sublime Text 3</a> - A text editor
+                  <a href="http://www.sublimetext.com/3" target="_blank">Install Atom</a> - A free text editor
               </li>
               <li>
-                  <a href="http://www.python.org/download/" target="_blank">Install Python 2.7</a>
-                  <br/><small>(This step is for Windows users only. GNU/Linux and Mac OS X come with Python installed!)</small>
+                  <a href="http://www.python.org/download/" target="_blank">Install Python 3.6</a>
+                  <br/><small>(This step is for Windows users only. GNU/Linux and Mac OS X come with Python installed! -- maybe, check the version)</small>
               </li>
               <li>
-                  <strong>Windows Users:</strong> After installing Python, open the "powershell" program and type:
-                  <br/><code class="copy--xsmall">[Environment]::SetEnvironmentVariable("Path", "$env:Path;C:\Python27", "User")</code>
+                  <strong>Windows Users:</strong> Make sure you add to path
               </li>
               <li>
                   Locate and run the terminal program. 
@@ -238,7 +234,6 @@
               <li>
                   More setup instructions are available:
                   <a href="http://learnpythonthehardway.org/book/ex0.html" target="_blank">here</a>
-                  <br/><small>(You can, but don't have to install the other text editors recommended in this guide)</small>
               </li>
           </ul>
       </section>
@@ -414,11 +409,11 @@ b = 10
                 <tr>
                     <td><code>pwd</code></td>
                     <td>Print working directory</td>
-                    <td style="padding-bottom: 20px">Displays what folder you are in.</td>
+                    <td style="padding-bottom: 20px">Displays what folder you are in. Windows the prompt always shows you.</td>
                 </tr>
                 <tr>
                     <td><code>ls</code></td>
-                    <td>List</td>
+                    <td>List (dir for windows)</td>
                     <td style="padding-bottom: 20px">Lists the files and folders in the current folder</td>
                 </tr>
                 <tr>
@@ -457,7 +452,7 @@ $ pwd
         <section>
             <h3>The Text Editor</h3>
             <ul class="list--tall copy--small box--small">
-                <li class="fragment">Open sublime text.</li>
+                <li class="fragment">Open Atom.</li>
                 <li class="fragment">Click "File", then "Open". Navigate to the <code>gdi-intro-python</code> <strong>folder</strong> we just created and click "Open"</li>
                 <li class="fragment">In the text editor, enter the following:
             <pre><code contenteditable class="python" style="min-height: 50px;">
@@ -478,7 +473,7 @@ print 'Hello World!'
             <pre><code contenteditable class="python" style="min-height: 50px;">
 name = raw_input("What is your name?")
 age = raw_input("How old are you?")
-print "Your name is" + name + " and you are " age + " years old."
+print("Your name is" + name + " and you are " age + " years old.")
             </code></pre>
             <p class="copy--small box--small">The raw_input return value is always a string. Keep that in mind when working on other problems!</p>
         </section>
