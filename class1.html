@@ -258,16 +258,16 @@
             <div class='box--small'><pre><code contenteditable class="python" style="min-height: 50px;">
 >>> a = 2
 >>> b = 3
->>> print a + b
+>>> print(a + b)
 5
 >>> c = a + b
->>> print c * 2
+>>> print(c * 2)
 10
             </code></pre></div>
             <div class='box--small'><pre><code contenteditable class="python" style="min-height: 50px;">
 >>> a = 0
 >>> a = a + .5
->>> print a
+>>> print(a)
 0.5
 >>> a
 0.5
@@ -296,18 +296,18 @@
 a = 'Hello '
 b = 'World'
 c = a + b
-print c
+print(c)
             </code></pre></div>
             <div class="box--small"><pre><code contenteditable class="python" style="min-height: 50px;">
 a = "Spam "
 b = a * 4
-print b
+print(b)
             </code></pre></div>
             <div class="box--small"><pre><code contenteditable class="python" style="min-height: 50px;">
 a = 'spam '
 b = 'eggs'
 c = a * 4 + b
-print c
+print(c)
             </code></pre></div>
         </section>
 
@@ -321,14 +321,14 @@ print c
               <li class="fragment"><code>type()</code> is a <strong>function</strong>. We <em>call</em> it by using parenthesis and pass it an object by placing the object inside the parenthesis
             <pre><code contenteditable class="python" style="min-height: 50px;">
 a = 4
-print type(a)
-print type(4)
+print(type(a))
+print(type(4))
 
-print type(3.14)
+print(type(3.14))
 
 b = 'spam, again'
-print type(b)
-print type("But I don't like spam")
+print(type(b))
+print(type("But I don't like spam"))
             </code></pre>
 
               </li>
@@ -344,7 +344,7 @@ print type("But I don't like spam")
                 <li>What happens if we try to use division or subtraction with a string?</li>
             </ul>
         <pre><code contenteditable class="python" style="min-height: 50px;">
->>> print "Spam" / "eggs"
+>>> print("Spam" / "eggs")
 Traceback (most recent call last):
 File "<stdin>", line 1, in <module>
 TypeError: unsupported operand type(s) for /: 'str' and 'str'
@@ -372,7 +372,7 @@ TypeError: unsupported operand type(s) for /: 'str' and 'str'
 
 # NameError - Using a name that hasn't been defined yet
 a = 5
-print b
+print(b)
 b = 10
 
 # TypeError - Using an object in a way that its type does not support
@@ -399,7 +399,7 @@ b = 10
 
       <!-- DEV ENV SETUP : 30 Minutes -->
         <section>
-            <h3>Using the Terminal</h3>
+            <h3>Using the Terminal or Console</h3>
             <table class="copy--xsmall" style='line-height: 1.5'>
                 <tr>
                     <th style="width: 160px;"><strong>Command</strong></th>
@@ -456,7 +456,7 @@ $ pwd
                 <li class="fragment">Click "File", then "Open". Navigate to the <code>gdi-intro-python</code> <strong>folder</strong> we just created and click "Open"</li>
                 <li class="fragment">In the text editor, enter the following:
             <pre><code contenteditable class="python" style="min-height: 50px;">
-print 'Hello World!'
+print('Hello World!')
             </code></pre>
                 </li>
                 <li class="fragment">Click "File", then "Save As...". Type "class1.py" and click "Save".</li>
