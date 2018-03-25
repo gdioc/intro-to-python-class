@@ -325,11 +325,17 @@ print(grades)
             <pre><code contenteditable class="python">
 print('To Do:')
 to_dos = ['work', 'sleep', 'work']
+# python 2
 for item in to_dos:
     print('item is: %s' %(item))
 
+# both
 name = 'Sally'
 print('Her name is {}'.format(name))
+
+# python 3
+print(f'Her name is {name}')
+
             </code></pre>
             <aside class="notes">
               print can take multiple args separated with a space, it combinesthemalltogether with no spaces
