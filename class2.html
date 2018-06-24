@@ -47,7 +47,7 @@
 
         <section>
             <h3>What we will cover the rest of today</h3>
-            <ul span class="box--small list--xtall">
+            <ul class="box--small list--xtall">
                 <li class ="fragment">Boolean Expressions</li>
                 <li class ="fragment">Conditionals</li>
                 <li class ="fragment">Lists</li>
@@ -223,7 +223,7 @@ else:
 print "It's your birthday!"
 answer = raw_input("How old are you? ")
 age = int(answer)
-if answer &lt; 21:
+if age &lt; 21:
     print "You may not have a beer, but here's some juice!"
 else:
     print "Here's some beer!"
@@ -254,7 +254,7 @@ else:
 print "It's your birthday!"
 answer = raw_input("How old are you? ")
 age = int(answer)
-if answer &lt; 21:
+if age &lt; 21:
     print "You may not have a beer, but here's some juice!"
 else:
     beers = raw_input("How many beers do you want?")
@@ -346,19 +346,19 @@ print costs
 
         <section>
           <h3>Range</h3>
-          <p class="fragment box--small copy--small">What do you think the following functions output?</p>
-          <pre><code contenteditable class="small fragment python">
+          <p class="box--small copy--small">What do you think the following functions output?</p>
+          <div class="fragment"><pre><code contenteditable class="small python">
   range(5)
-          </code></pre>
-          <pre><code contenteditable class="small fragment python">
+          </code></pre></div>
+          <div class="fragment"><pre><code contenteditable class="small python">
   range(5, 10)
-          </code></pre>
-          <pre><code contenteditable class="small fragment python">
+          </code></pre></div>
+          <div class="fragment"><pre><code contenteditable class="small python">
   range(10, 20, 2)
-          </code></pre>
-          <pre><code contenteditable class="small fragment python">
+          </code></pre></div>
+          <div class="fragment"><pre><code contenteditable class="small python">
   range(20, 8, -2)
-          </code></pre>
+          </code></pre></div>
         </section>
 
         <section>
@@ -394,10 +394,10 @@ for moose in range(5):
         <section>
             <h3>Let's Develop It</h3>
           <p class="copy--small box--small">Let's iterate through the following list:</p>
-          <p class="copy--small box--small"><pre>["Mary", "had", "a", "little", "lamb"]</pre></p>
+          <pre><code contenteditable class="small python">["Mary", "had", "a", "little", "lamb"]</code></pre>
           <p class="copy--small box--small fragment">For each word, check if the letter "a" is in the list.</p>
           <div class="fragment"><p class="copy--small small--box">For example:</p>
-          <pre><code contenditable class="small python">
+          <pre><code contenteditable class="small python">
 The word Mary contains the letter a.
 The word little does not contain the letter a.
           </code></pre></div>
@@ -443,6 +443,7 @@ The word little does not contain the letter a.
 
   <script src="js/jquery.min.js"></script>
   <script src="js/reveal.min.js"></script>
+  <script src="js/pre.js"></script>
   <script>
     // Full list of configuration options available here:
     // https://github.com/hakimel/reveal.js#configuration
