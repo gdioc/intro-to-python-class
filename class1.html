@@ -288,7 +288,7 @@
 'HELLO'
 >>>'welcome'.capitalize()
 'Welcome'
->>'GOOD BYE'.lower()
+>>>'GOOD BYE'.lower()
 'good bye'
             </code></pre></div>
         </section>
@@ -351,7 +351,7 @@ print type("But I don't like spam")
         <pre><code contenteditable class="python" style="min-height: 50px;">
 >>> print "Spam" / "eggs"
 Traceback (most recent call last):
-File "<stdin>", line 1, in <module>
+File "&lt;stdin&gt;", line 1, in &lt;module&gt;
 TypeError: unsupported operand type(s) for /: 'str' and 'str'
         </code></pre>
         </section>
@@ -479,7 +479,7 @@ print 'Hello World!'
 name = raw_input("What is your name?")
 age = raw_input("How old are you?")
 age_int = int(age)
-print "Your name is" + name + " and you are " age + " years old."
+print "Your name is" + name + " and you are " + age + " years old."
 
 type(age)
 type(age_int)
@@ -532,6 +532,7 @@ type(age_int)
 
   <script src="js/jquery.min.js"></script>
   <script src="js/reveal.min.js"></script>
+  <script src="js/pre.js"></script>
   <script>
     // Full list of configuration options available here:
     // https://github.com/hakimel/reveal.js#configuration
