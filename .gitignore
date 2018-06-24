@@ -1,0 +1,13 @@
+# IDE
+.idea/
+
+# OS
+.DS_Store
+
+# Python
+*.py[cod]
+__pycache__/
+
+# Ruby
+*.gem
+*.rbc
